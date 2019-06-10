@@ -10,12 +10,21 @@ There is a file called `random_ids.txt` in `data/junk` Folder. Count the number 
 
 ```
 # Type Your Answer Below This Line
-```
+
+0
 
 ```
 # How did you do it ?
 # Type Your Answer Below This Line
 ```
+Open terminal
+cd masai - Enter your respective directory
+git clone https://github.com/masai-school/assignments-data
+Enter to the data/junk folder
+``grep -o '\<masai\>' random_ids.txt | wc -l`
+
+
+
 
 ## FSD.W1.1.B (10 min)
 
@@ -26,12 +35,13 @@ The names of the respective folders should be `fruits` `vegetables` `meats`.
 ```
 # Assume that you are in the `food` folder in the terminal
 # Type Your Answer Below This Line
-<COMMAND 1>
-<COMMAND 2>
-<COMMAND 3>
-.
-.
-.
+mkdir fruits vegetables meats
+mv vegetable_brinjal.txt vegetable_beetroot.txt vegetable_beans.txt vegetable_potato.txt vegetable_carrot.txt vegetables
+mv meat_chicken.txt meat_eggs.txt meat_fish.txt meat_mutton.txt meat_prawns.txt meats 
+mv fruit_apple.txt fruit_banana.txt fruit_grapes.txt fruit_mango.txt fruit_orange.txt
+
+
+
 ```
 
 ## FSD.W1.1.C (10 min)
@@ -42,9 +52,10 @@ Create a new team (folder) under the `superheros` folder called `guardians` with
 ```
 # Assume that you are in the superheros folder in the terminal
 # Type Your Answer Below This Line
-<COMMAND 1>
-<COMMAND 2>
-<COMMAND 3>
+mkdir -p superheros/avengers/guardians
+cd superheros/avengers/guardians
+mkdir Drax Gamora Groot Mantis Rocket Star Lord
+
 .
 .
 .
@@ -59,16 +70,13 @@ iron_man >  tony_stark
 batman > bruce_wayne 
 flash > barry_allen 
 hulk > brunce_banner
-```
+
 
 ```
-# Assume that you are in the `superheros` folder in the terminal
+# Assume that you are in the `superheros` folder in the terminal 
 # Type Your Answer Below This Line
-<COMMAND 1>
-<COMMAND 2>
-<COMMAND 3>
-.
-.
+
+mkdir ron_man >  tony_stark batman > bruce_wayne flash > barry_allen hulk > brunce_banner
 .
 ```
 
@@ -88,9 +96,20 @@ You have been assigned the task to clean and organize the logs, with the followi
 ```
 # Assume that you are in the logs folder in the terminal
 # Type Your Answer Below This Line
-<COMMAND 1>
-<COMMAND 2>
-<COMMAND 3>
+
+1.cd archive
+rm *.log 2014-2016
+2.rm *.log 2017
+3.cd log/access/
+rm *.log 2018
+4.cd log
+mkdir access error
+mv 
+
+5.mv archive dumps
+6.mv dump ../log
+
+
 .
 .
 .
